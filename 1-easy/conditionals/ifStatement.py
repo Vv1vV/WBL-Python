@@ -1,5 +1,5 @@
 def checkName(name):
-    if name == "Thomas":
-        return "Hello Owner!"
+    if name == "Joshua":
+        return("Welcome Creator!")
     else:
-        return "You are new?"
+        return("You are new.")

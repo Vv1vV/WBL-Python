@@ -1,3 +1,3 @@
 def getName():
-    name = input("Please enter your name: ")
+    name = input("Please enter your name:")
     return name
