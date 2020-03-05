@@ -1,16 +1,12 @@
-from inputP.stringf import namef
+from inputP.stringF import nameF
 from outputP.getName import getName
 from conditionals.ifStatement import checkName
 
 
-
-
 def main():
     name = getName()
-    print(namef(name))
+    print(nameF(name))
     print(checkName(name))
-    
-
 
 
 if __name__ == "__main__":

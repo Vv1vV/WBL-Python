@@ -3,4 +3,3 @@ def checkName(name):
         return("Welcome Creator!")
     else:
         return("You are new.")
-    
