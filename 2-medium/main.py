@@ -50,6 +50,37 @@ def main():
 
     def multiply(number1, number2):
         return number1 * number2
+
+    ////////////////////////////////////////////////////////////////////////
+
+    Create a class in the classes folder called Animal the file will be called animal.py
+
+    animal will store two variables size which can be either small, medium or large and name which will be the species or name of the animal e.g dog
+
+    animal will have two functions
+
+    function 1
+
+    Check if the size is not small, medium or large
+
+    function 2
+
+    create a function which returns the noise a dog makes if the species/name is equal to dog
+
+    e.g if self.type == dog: return 'woof'
+
+    ////////////////////////////////////////////////////////////////////////
+
+    class Car:
+        def __init__(self, type, make):
+            self.type = type
+            self.make = make
+
+        def checkType(self):
+            print(self.type)
+
+        def checkMake(self):
+            print(self.make)
     '''
 
     loAm = int(input("Please enter number:"))
