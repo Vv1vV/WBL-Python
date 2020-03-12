@@ -1,8 +1,8 @@
 from loops.loopInp import loInp
 import functions.chal2 as Test2
+from classes.animal import Animal
 
 def main():
-    
     '''
     Create a function in loops folder that will go from 0 to a user defined number.
     Get the number outside of the function and pass it as an arguement. 
@@ -32,7 +32,7 @@ def main():
 
     Both functions will take two arguements.
 
-    Function 1 - Multiply two numbers together and if it is a modulus of 2 return True
+    Function 1 - Multiple two numbers together and if it is a modulus of 2 return True
 
     2 * 5 = 10
 
@@ -50,6 +50,37 @@ def main():
 
     def multiply(number1, number2):
         return number1 * number2
+
+    ////////////////////////////////////////////////////////////////////////
+
+    Create a class in the classes folder called Animal the file will be called animal.py
+
+    animal will store two variables size which can be either small, medium or large and name which will be the species or name of the animal e.g dog
+
+    animal will have two functions
+
+    function 1
+
+    Check if the size is not small, medium or large
+
+    function 2
+
+    create a function which returns the noise a dog makes if the species/name is equal to dog
+
+    e.g if self.type == dog: return 'woof'
+
+    ////////////////////////////////////////////////////////////////////////
+
+    class Car:
+        def __init__(self, type, make):
+            self.type = type
+            self.make = make
+
+        def checkType(self):
+            print(self.type)
+
+        def checkMake(self):
+            print(self.make)
     '''
 
     loAm = int(input("Please enter number:"))
@@ -57,8 +88,14 @@ def main():
     print(arr)
     print(Test2.multiCheck(1, 11, 11))
     print(Test2.plusArr(13, 4))
-
-   
+    cat = Animal("small", "cat")
+    dog = Animal("medium", "dog")
+    elephant = Animal("large", "elephant")
+    whale = Animal("extra large", "whale")
+    arr = [cat, dog, elephant, whale]
+    for i in arr:
+        print(i.sizeCheck())
+        print(i.amdog())
 
 
 if __name__ == "__main__":
