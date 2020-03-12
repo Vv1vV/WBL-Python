@@ -1,8 +1,8 @@
 from loops.loopInp import loInp
 import functions.chal2 as Test2
 
+
 def main():
-    
     '''
     Create a function in loops folder that will go from 0 to a user defined number.
     Get the number outside of the function and pass it as an arguement. 
@@ -32,7 +32,7 @@ def main():
 
     Both functions will take two arguements.
 
-    Function 1 - Multiply two numbers together and if it is a modulus of 2 return True
+    Function 1 - Multiple two numbers together and if it is a modulus of 2 return True
 
     2 * 5 = 10
 
@@ -57,8 +57,6 @@ def main():
     print(arr)
     print(Test2.multiCheck(1, 11, 11))
     print(Test2.plusArr(13, 4))
-
-   
 
 
 if __name__ == "__main__":
