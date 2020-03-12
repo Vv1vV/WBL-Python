@@ -1,6 +1,6 @@
 from loops.loopInp import loInp
 import functions.chal2 as Test2
-
+from classes.animal import Animal
 
 def main():
     '''
@@ -88,6 +88,14 @@ def main():
     print(arr)
     print(Test2.multiCheck(1, 11, 11))
     print(Test2.plusArr(13, 4))
+    cat = Animal("small", "cat")
+    dog = Animal("medium", "dog")
+    elephant = Animal("large", "elephant")
+    whale = Animal("extra large", "whale")
+    arr = [cat, dog, elephant, whale]
+    for i in arr:
+        print(i.sizeCheck())
+        print(i.amdog())
 
 
 if __name__ == "__main__":
