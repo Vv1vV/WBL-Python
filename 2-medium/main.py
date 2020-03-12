@@ -1,3 +1,4 @@
+from loops.loopInp import loInp 
 
 def main():
     '''
@@ -21,7 +22,8 @@ def main():
         i += 1
     '''
     print("Hello world")
-
-
+    loAm = int(input("Please enter number:"))
+    arr = loInp(loAm)
+    print(arr)
 if __name__ == "__main__":
     main()
