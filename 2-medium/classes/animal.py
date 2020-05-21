@@ -1,7 +1,7 @@
 class Animal:
     def __init__(self, size, species):
         self.size = size
-        self.species = species 
+        self.species = species
 
     def sizeCheck(self):
         if self.size != "small":
@@ -10,14 +10,7 @@ class Animal:
                     return "Enter either: small, medium, large"
         return self.size
 
-
-
-
-
     def amdog(self):
         if self.species == "dog":
             return "Woof"
-        return "you are not a dog" 
-        
-
-
+        return "you are not a dog"

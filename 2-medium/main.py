@@ -2,6 +2,7 @@ from loops.loopInp import loInp
 import functions.chal2 as Test2
 from classes.animal import Animal
 
+
 def main():
     '''
     Create a function in loops folder that will go from 0 to a user defined number.
