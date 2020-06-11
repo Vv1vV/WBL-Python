@@ -11,11 +11,16 @@ class ServerClient:
 
         while userInput != 'exit':
             userInput = input(
-            "Server message (use exit to leave) > ")
+                "Server message (use exit to leave) > ")
             response, addr = self.client.poll_server(
                 userInput, server=self.server)
-            print(response, addr)
+            self.formatResponse(response, addr)
             self.reInitConnection()
 
     def reInitConnection(self):
         self.client = Client()
+
+    def formatResponse(self, res, addr):
+        response = "{1}:{2} > {0}".format(str(res.decode()),
+                                          addr[0], addr[1])
+        print(response)
