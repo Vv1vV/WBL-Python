@@ -9,6 +9,7 @@ class ServerClient:
     def poll(self):
         userInput = ''
 
+<<<<<<< Updated upstream
         while userInput != 'exit':
             userInput = input(
             "Server message (use exit to leave) > ")
@@ -25,3 +26,16 @@ class ServerClient:
         response = "{0} - {1}:{2}".format(str(res.decode()), 
                                                 addr[0], addr[1])
         print(response)
+=======
+        while userInput != 'exit' : 
+            userInput = input("Server message (use exit to leave) > ")
+        response, addr = self.client.poll_server(
+            userInput, server=self.server)
+        print(response, addr)
+        self.reInitConnection()
+
+    def reInitConnection(self):
+        self.client = Client()
+ 
+
+>>>>>>> Stashed changes
