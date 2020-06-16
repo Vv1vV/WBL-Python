@@ -1,6 +1,8 @@
+from src.classes.MyClient import bot
 
 def main():
-    print("Hello World")
+    bot.run("")#Insert Discord bot auth code between speach marks
+
 
 
 if __name__ == "__main__":
